@@ -33,6 +33,6 @@ setup(
     author='ujhin',
     author_email='ujhin942@gmail.com',
     description='Upbit OPEN API Client',
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
     long_description=long_description
 )
