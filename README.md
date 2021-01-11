@@ -3,7 +3,7 @@
 [Base Repository](https://github.com/uJhin/upbit-client/)
 
 # Upbit OPEN API Client
-- @Author: ujhin
+- @Author: [ujhin](https://github.com/uJhin)
 - @GitHub: https://github.com/uJhin/upbit-client/
 - @Official Documents: https://ujhin.github.io/upbit-client-docs/
 
