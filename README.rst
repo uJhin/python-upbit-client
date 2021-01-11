@@ -1,7 +1,8 @@
 .. image:: https://raw.githubusercontent.com/uJhin/upbit-client/main/logo/logo.png
     :align: center
 
-`Base Repository <https://github.com/uJhin/upbit-client/>`_
+- `Base Repository <https://github.com/uJhin/upbit-client/>`_
+- `Python Upbit Client Repository <https://github.com/uJhin/python-upbit-client>`_
 
 Upbit OPEN API Client
 **********************
@@ -13,15 +14,15 @@ Install
 ========
 - pip command
 
-.. code:: bash
+.. code:: console
 
     pip install upbit-client
 
 - git command
 
-.. code:: bash
+.. code:: console
 
-    git clone https://github.com/uJhin/upbit-client.git
+    git clone https://github.com/uJhin/python-upbit-client.git
 
 
 Simple Examples
