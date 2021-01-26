@@ -40,7 +40,7 @@ Simple Examples
     secret_key = "Your Secret Key"
 
     client = Upbit(access_key, secret_key)
-    print(client.APIKey.APIKey_info().result())
+    print(client.APIKey.APIKey_info()['result'])
 
 
 - Buy Currency
@@ -61,8 +61,8 @@ Simple Examples
         volume='0.1',
         price='3000000',
         ord_type='limit'
-    ).result()
-    print(order)
+    )
+    print(order['result'])
 
 
 - Sell Currency
@@ -83,8 +83,8 @@ Simple Examples
         volume='0.1',
         price='3000000',
         ord_type='limit'
-    ).result()
-    print(order)
+    )
+    print(order['result'])
 
 Donation
 *********
