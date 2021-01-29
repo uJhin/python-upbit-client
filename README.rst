@@ -102,7 +102,8 @@ WebSocket Client
     from upbit.websocket import UpbitWebSocket
 
 
-    async def trade(sock, payload):
+    # Definition async function
+    async def ticker(sock, payload):
         async with sock as conn:
             await conn.send(payload)
             data = await conn.recv()
@@ -114,10 +115,10 @@ WebSocket Client
 
     currencies = ["KRW-BTC", "KRW-ETH"]
     payload = sock.generate_payload(
-        type="trade", codes=currencies)
+        type="ticker", codes=currencies)
 
     event_loop = asyncio.get_event_loop()
-    event_loop.run_until_complete(trade(sock, payload))
+    event_loop.run_until_complete(ticker(sock, payload))
 
 Donation
 *********
