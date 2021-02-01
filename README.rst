@@ -1,12 +1,13 @@
 .. image:: https://raw.githubusercontent.com/uJhin/upbit-client/main/logo/logo.png
     :align: center
 
-- `Base Repository <https://github.com/uJhin/upbit-client/>`_
-- `Python Upbit Client Repository <https://github.com/uJhin/python-upbit-client>`_
+
 
 Upbit OPEN API Client
 ######################
-- @Author: `uJhin <https://github.com/uJhin>`_
+- @Base Repository: https://github.com/uJhin/upbit-client/
+- @Python Upbit Client Repository: https://github.com/uJhin/python-upbit-client/
+- @Author: `uJhin <https://github.com/uJhin/>`_
 - @GitHub: https://github.com/uJhin/upbit-client/
 - @Official Documents: https://ujhin.github.io/upbit-client-docs/
 
