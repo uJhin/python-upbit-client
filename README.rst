@@ -2,11 +2,11 @@
     :align: center
 
 - `Base Repository <https://github.com/uJhin/upbit-client/>`_
-- `Python Upbit Client Repository <https://github.com/uJhin/python-upbit-client/>`_
+- `Python Upbit Client Repository <https://github.com/uJhin/python-upbit-client>`_
 
 Upbit OPEN API Client
 ######################
-- @Author: `uJhin <https://github.com/uJhin/>`_
+- @Author: `uJhin <https://github.com/uJhin>`_
 - @GitHub: https://github.com/uJhin/upbit-client/
 - @Official Documents: https://ujhin.github.io/upbit-client-docs/
 
@@ -118,9 +118,14 @@ WebSocket Client
 
     sock = UpbitWebSocket()
 
-    currencies = ["KRW-BTC", "KRW-ETH"]
+    currencies = ['KRW-BTC', 'KRW-ETH']
+    type_field = sock.generate_type_field(
+        type='ticker',
+        codes=currencies,
+    )
     payload = sock.generate_payload(
-        type="ticker", codes=currencies)
+        type_fields=[type_field]
+    )
 
     event_loop = asyncio.get_event_loop()
     event_loop.run_until_complete(ticker(sock, payload))
