@@ -75,6 +75,15 @@ class UpbitWebSocket:
             ping_timeout=ping_timeout
         )
 
+    async def ping(self):
+        """
+        Client to Server PING
+        """
+        async with self as conn:
+            await conn.send('PING')
+            recv = await conn.recv()
+            return json.loads(recv)
+
     @staticmethod
     def generate_orderbook_codes(
         currencies: Union[List[str]],
@@ -163,12 +172,12 @@ class UpbitWebSocket:
 
         return json.dumps(payload)
 
-    async def __aenter__(self) -> websockets.client.WebSocketClientProtocol:
+    async def __aenter__(self):
         return await self.Connection.__aenter__()
 
-    async def __aexit__(self, exc_type, exc_value, traceback) -> None:
+    async def __aexit__(self, exc_type, exc_value, traceback):
         await self.Connection.__aexit__(exc_type, exc_value, traceback)
-    
+
     def __str__(self):
         return self.__repr__()
 
