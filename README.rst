@@ -108,8 +108,8 @@ WebSocket Client
     # Definition async function
     async def ticker(sock, payload):
         async with sock as conn:
+            await conn.send(payload)
             while True:
-                await conn.send(payload)
                 recv = await conn.recv()
                 data = recv.decode('utf8')
                 result = json.loads(data)
