@@ -5,7 +5,7 @@ bravado-core==5.17.1
 certifi==2023.7.22
 charset-normalizer==3.1.0
 fqdn==1.5.1
-idna==3.4
+idna==3.7
 isoduration==20.11.0
 jsonpointer==2.3
 jsonref==1.1.0
